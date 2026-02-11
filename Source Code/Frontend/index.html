@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFakeShield - Image Forgery Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>DeepFakeShield 🛡️</h1>
+        <p>Upload an image to check if it's authentic or manipulated</p>
+        
+        <div class="right-section">
+            <div class="upload-area">
+                <input type="file" id="imageUpload" accept="image/*">
+                <button class="upload-btn" onclick="document.getElementById('imageUpload').click()">
+                    Choose Image
+                </button>
+                <p id="fileName" style="margin-top: 10px; font-size: 0.9em;"></p>
+            </div>
+            
+            <button id="uploadBtn" class="analyze-btn">Analyze Image</button>
+        </div>
+
+        <div class="left-section">
+            <h2>Analysis Results</h2>
+            <div id="preview"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

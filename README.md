@@ -5,7 +5,7 @@ Here’s a **ready-to-paste filled version** 👇
 
 ---
 
-# 22471A05XX – DeepFakeShield: Image Forgery Detection using ELA + EfficientNetV2
+# DB11– DeepFakeShield: Image Forgery Detection using ELA + EfficientNetV2
 
 ## Team Info
   
